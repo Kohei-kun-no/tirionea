@@ -1,0 +1,94 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+  html {
+      height:100%
+  }
+  
+  
+ .top {
+     background-image: url("https://4.bp.blogspot.com/-ZTm9z2mWlMM/WHxPee4WB4I/AAAAAAABBIE/FhTLMqTvy_gmtZCKQxqfad_Fdge-oXx6gCLcB/s800/sekaichizu.png");
+     background-size: cover;
+     height:100%;
+     height:700px;
+ }
+
+ .top span {
+     color:green;
+ }
+
+ .box {
+     text-align:center;
+     width: 900px;
+     margin:0 auto;
+ }
+
+ .box h1 {
+     font-size:100px;
+     letter-spacing: 5px;
+     font-family:'HGP行書体',cursive;
+ }
+
+ .btn {
+     padding:8px 24px;
+     color:white;
+     display: inline-block;
+     opacity:0.8;
+ }
+
+ 
+ a:hover {
+     background-color:#FF9933;
+     box-shadow: 5px 5px black;
+ }
+
+ .box a {
+     transition:all 1s;
+     line-height:65px;
+     padding: 0 25px 0 25px;
+     color:black;
+     display:block;
+     margin-top:100px;
+     font-size:50px;
+     
+ }
+
+ a active {
+     box-shadow: none;
+ }
+
+ 
+
+* 問題の投稿
+.contact-form {
+    padding-top: 100px;
+    text-align:centre;
+  }
+  
+  input, textarea {
+    text-align:centre;  
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid #dee7ec;
+  }
+  
+  .contact-submit {
+    background-color: #dee7ec;
+    color: #889eab;
+  }
+  

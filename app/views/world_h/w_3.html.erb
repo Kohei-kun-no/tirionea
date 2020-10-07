@@ -1,0 +1,97 @@
+<div class="tirionea_n">
+<body>
+<h1>クイズ<span>地理</span>オネア</h1>
+<hr>
+<h2>問題</h2>
+<div id="text_q"></div>
+<h2>選択</h2>
+<div id="text_s"></div>
+<h2>解答</h2>
+<div id="text_a"></div>
+</div>
+
+<script type="text/javascript">
+//問題と解答
+qa = new Array();
+qa[0] = ["京都で多くの寺社を焼失させた戦乱","応仁の乱","平治の乱","大塩平八郎の乱","加藤の乱",1];
+qa[1] = ["「モンサンミッシェル」の聖堂を建てるように告げた天使","聖ヤコブ","聖母マリア","聖ミカエル","イエスキリスト",3];
+qa[2] = ["世界遺産がもつとされる価値","芸術的価値","普遍的価値","利益的価値","金銭的価値",2];
+qa[3] = ["世界遺産条約の誕生のきっかけ","第二次世界大戦","アスワンハイダムの建設","水素爆弾の投下","多種の動物の絶滅",2];
+qa[4] = ["世界遺産を英語に訳すと World (     )","Heritage","Monument","Memory","Treasure",1];
+qa[5] = ["ユネスコの正式名称","国際連合科学教育機関","国際連合文化保全機関","国際連合教育科学文化機関","国際連合",3];
+qa[6] = ["残酷な見世物が催されていたイタリアの世界遺産","コロッセオ","パンテオン","エッフェル塔","凱旋門",1];
+qa[7] = ["2013年に国内のすべての世界遺産が危機遺産登録された国","ウクライナ","ラオス","シリア","スーダン",3];
+
+
+
+
+q_sel = 4; //選択肢の数
+
+setReady();
+
+//初期設定
+function setReady() {
+   count = 0; //問題番号
+   ansers = new Array(); //解答記録
+   
+   //最初の問題
+   quiz();
+}
+
+//問題表示
+function quiz() {
+   //問題
+   document.getElementById("text_q").innerHTML = (count + 1) + "問目：" + qa[count][0];
+   //選択肢
+   s = "";
+   for (n=1;n<=q_sel;n++) {
+       s += "【<a href='javascript:anser(" + n + ")' >" + n + "：" + qa[count][n] + "</a>】";
+   }
+   document.getElementById("text_s").innerHTML = s;
+}
+
+//解答表示
+function anser(num) {
+   var s;
+   s = (count + 1) + "問目：";
+   //答え合わせ
+   if (num == qa[count][q_sel + 1]) {
+       //正解
+       s += "○" + qa[count][num];
+       ansers[count] = "○";
+   } else {
+       s += "×" + qa[count][num];
+       ansers[count] = "×";
+   }
+   document.getElementById("text_a").innerHTML = s;
+   //次の問題を表示
+   count++;
+   if (count < qa.length) {
+   quiz();
+   } else {
+       //終了
+       s = "<table border='2'><caption>成績発表</caption>";
+       //1行目
+       s += "<tr><th>問題</th>";
+       for (n=0;n<qa.length;n++) {
+           s += "<th>" + (n+1) + "</th>";
+       }
+       s += "</tr>";
+       //2行目
+       s += "<tr><th>成績</th>";
+       for (n=0;n<qa.length;n++) {
+           s += "<td>" + ansers[n] + "</td>";
+       }
+       s += "</tr>";
+       s += "</table>";
+       document.getElementById("text_q").innerHTML = s;
+       //次の選択肢
+       s = "【<a href='javascript:history.back()'>前のページに戻る</a>】";
+       s += "【<a href='javascript:setReady()'>同じ問題を最初から</a>】";
+       s += "【<a href='w_a_3'>解答をみる</a>】";
+       document.getElementById("text_s").innerHTML = s;
+   }
+}
+</script>
+</body>
+</html>

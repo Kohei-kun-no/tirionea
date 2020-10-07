@@ -1,0 +1,95 @@
+// Place all the styles related to the world_h controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+// Place all the styles related to the quizzes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.tisi {
+    background-image: url("https://2.bp.blogspot.com/-ngdlNja37lk/XJhwPsT0QtI/AAAAAAABSEc/WnLJE71Okgsn_IHlNfzohvE0CXfLOTEkACLcBGAs/s800/bg_namikimichi1_sakura.jpg");
+    background-size: cover;
+    height:100%;
+    height:900px;
+}
+
+.tirionea_n {
+    background-image: url("https://4.bp.blogspot.com/-ZTm9z2mWlMM/WHxPee4WB4I/AAAAAAABBIE/FhTLMqTvy_gmtZCKQxqfad_Fdge-oXx6gCLcB/s800/sekaichizu.png");
+    background-size: cover;
+    height:100%;
+    height:700px;
+}
+
+.keitou_select {
+    text-align:center;
+    font-size:40px;
+    background-image:url("https://1.bp.blogspot.com/-sP4CL_su3II/Whu14ZZKcfI/AAAAAAABIdw/NRl8Uy9OP1s_rvjvCvqVsam6H9ErVObxQCLcBGAs/s800/bg_hatake.jpg");
+    background-size: cover;
+    height:100%;
+    height:900px;
+    z-index: 1;
+}
+
+
+
+
+.tirionea_n h1 {
+    font-family:'HGP行書体',cursive;
+    text-align:center;
+}
+.tirionea_n h2 {
+    color:blue;
+    text-align:center;
+}
+#text_q {
+    text-align:center;
+    font-size:20px;
+    background-color:yellow;
+}
+#text_s {
+    text-align:center;
+    font-size:20px;
+    background-color:yellow; 
+}
+#text_a {
+    text-align:center;
+    font-size:20px;
+}
+
+.choice {
+    text-align:center;
+    font-size:40px;
+    background-image:url("https://4.bp.blogspot.com/-ZTm9z2mWlMM/WHxPee4WB4I/AAAAAAABBIE/FhTLMqTvy_gmtZCKQxqfad_Fdge-oXx6gCLcB/s800/sekaichizu.png");
+    background-size: cover;
+    height:100%;
+    height:700px;
+    z-index: 1;
+}
+
+.choice li {
+    list-style: none;
+    z-index: 2;
+    background-color: skyblue;
+    
+    opacity: 0.8;
+
+}
+
+.answer li {
+   list-style: none;
+   margin-top:10px;
+   text-align: center;
+}
+
+.flash {
+    font-size:30px;
+    color:orange;
+    background-color: white;
+}
+
+.tirionea_n span {
+    color: green;
+}
+
+.choice span {
+    color: red;
+}
+

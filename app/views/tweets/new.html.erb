@@ -1,0 +1,18 @@
+<div class="post">
+ <h1>クイズ地理オネア</h1>
+ <div class="flash">
+  <%= flash[:notice] %>
+ </div> 
+ <h3>新規投稿</h3>
+ <h4>1.問題（必須）2.解答（必須）3.入れてほしい選択肢（任意）
+ <h4>例：1.アメリカの首都　2.ワシントンD.C. 3.ニューヨーク</h4>
+ <%= form_for @tweet do |f| %>
+   <div class="field">
+     <!-- <%= f.label :記入欄%> -->
+     <%= f.text_field :body, :size => 140 %>
+   </div>
+   <%= f.submit "投稿する" %>
+ <% end %>
+ <!-- <%= link_to "投稿一覧に戻る", tweets_path %> -->
+ <%= link_to '選択画面に戻る', :controller => "quizzes", :action => "top" %>
+</div> 

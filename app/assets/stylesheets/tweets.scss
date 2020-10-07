@@ -1,0 +1,23 @@
+// Place all the styles related to the tweets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.after {
+    background-image: url("https://4.bp.blogspot.com/-ZTm9z2mWlMM/WHxPee4WB4I/AAAAAAABBIE/FhTLMqTvy_gmtZCKQxqfad_Fdge-oXx6gCLcB/s800/sekaichizu.png");
+    background-size: cover;
+    height:100%;
+    height: 700px;
+    width:100%;
+    text-align: center;
+}
+
+.post {
+    text-align: center;
+    background-image: url("https://4.bp.blogspot.com/-ZTm9z2mWlMM/WHxPee4WB4I/AAAAAAABBIE/FhTLMqTvy_gmtZCKQxqfad_Fdge-oXx6gCLcB/s800/sekaichizu.png");
+    background-size: cover;
+    height:700px;
+}
+
+.flash {
+    background-color: green;
+    color:white;
+}
